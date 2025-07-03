@@ -1,6 +1,5 @@
 "use client"
 import React, { useState } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 function NavBar() {
@@ -15,9 +14,9 @@ function NavBar() {
       <div className="container mx-auto flex justify-between items-center py-4 px-6 md:px-12">
         {/* Brand/Logo Section */}
         <div className="text-2xl font-bold">
-          <a href="/#" className="hover:text-gray-300 transition duration-300">
+          <Link href="/#" className="hover:text-gray-300 transition duration-300">
             Ziada
-          </a>
+          </Link>
         </div>
         {/* <div className="w-32 h-10">
             <a href="#" className="block">
@@ -92,30 +91,30 @@ function NavBar() {
       {isOpen && (
         <div className="md:hidden bg-[#003366] py-4">
           <div className="container mx-auto px-6 md:px-12 space-y-4">
-            <a
+            <Link
               href="#"
               className="block text-lg font-medium hover:text-gray-300 transition duration-300"
             >
               Home
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="block text-lg font-medium hover:text-gray-300 transition duration-300"
             >
               About
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="block text-lg font-medium hover:text-gray-300 transition duration-300"
             >
               Services
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="block text-lg font-medium hover:text-gray-300 transition duration-300"
             >
               Contact
-            </a>
+            </Link>
           </div>
         </div>
       )}
